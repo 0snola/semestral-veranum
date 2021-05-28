@@ -28,6 +28,10 @@ body{
     font-size: 65px;
     margin-bottom: 30px;   
 }
+.iconos-redes-header{
+    width: 20px;
+    margin: 10px 5px;
+}
 
 
 
@@ -113,7 +117,6 @@ form .user-input:hover, .form .user-input:focus, .form .user-input:active{
     color: #bbb;
     font-size: 14px;
     margin-top: 30px;
-    margin-right: 20px;
 }
 
 .form .option-01 a{
@@ -165,7 +168,7 @@ form .user-input:hover, .form .user-input:focus, .form .user-input:active{
 }
 
 .error {
-    border: 5px solid red;
+    border: 2px solid red;
     border-radius: 5px;
 }
 
@@ -174,7 +177,7 @@ form .user-input:hover, .form .user-input:focus, .form .user-input:active{
     font-size: large;
     color: white;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;

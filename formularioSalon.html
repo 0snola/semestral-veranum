@@ -35,7 +35,7 @@
                     <input type="text" class="form-control" id="email" name="email" placeholder="Ingrese su email">  
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="fecha" name="fecha" placeholder="Ingrese la fecha solicitada">  
+                    <input type="text" class="form-control" id="fecha" name="fecha" placeholder="Ingrese la fecha solicitada (DD/MM/YYYY)">  
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
                 <div class="botonRollback btn btn-primary">
@@ -48,7 +48,7 @@
         var nombrePatron = new RegExp("^[A-Za-zÁÉÍÓÚáéíóúñÑ ]+$");
         var emailPatron = new RegExp("^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+.[a-z]{2,4}$");
         var rutPatron = new RegExp("^[A-Z0-9.-]{8,14}$");
-        var fechaPatron = new RegExp("^(?! *$)[a-zA-Z0-9.+ '-]+$");
+        var fechaPatron = new RegExp("^(?! *$)[a-zA-Z0-9.+/-]+$");
         function validaTexto(idInput,patron){
             return $(idInput).val().match(patron) ? true : false;
         }
@@ -97,8 +97,7 @@
                             alert("Datos ingresados satisfactoriamente.");
                         }
                     }
-                );
-                
+                );              
                 $("#hotel").hover(
                     function()
                     {
