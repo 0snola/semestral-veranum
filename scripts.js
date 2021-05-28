@@ -11,7 +11,7 @@ function iniciarMapVina(){
 }
 
 function iniciarMapSantiago(){
-  var coord = {lat:-33.445585 ,lng: -70.625780};
+  var coord = {lat:-33.43080963235248 ,lng: -70.61892614144422};
   var map = new google.maps.Map(document.getElementById('map'),{
     zoom: 15,
     center: coord
