@@ -19,5 +19,5 @@ from AppHoteles import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hoteles/', views.home)
+    path('hoteles/', views.reservaHabitacion,name="reservaHabitacion"),
 ]
